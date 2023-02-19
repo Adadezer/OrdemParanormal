@@ -10,6 +10,7 @@
   border: none;
   border-radius: 20px;
   background-color: rgb(0, 0, 0);
+  /* background-color: rgb(182, 228, 182); */
 }
 
 .img-nomes {
@@ -17,7 +18,7 @@
   /* background-color: yellow; */
 }
 .avatar {
-  border: rgb(145, 0, 0) solid 3px;
+  /* border: rgb(145, 0, 0) solid 3px; */
   border-radius: 100%;
   width: 150px;
 }
@@ -41,13 +42,8 @@
   border-bottom: rgb(145, 0, 0) solid 2px;
   outline: 0;
   background: transparent;
-  color: white;
   font-size: large;
   text-align: center;
-}
-
-.tituloJogador-Personagem {
-  color: white;
 }
 
 .orgm-class {
@@ -71,15 +67,48 @@
   padding: 15px;
   border-radius: 10px;
   background-color: rgba(145, 0, 0, 0.363);
-  color: white;
   font-size: 20px;
   text-align: center;
 }
 
-.tituloOrigem-Classe {
+.status {
+  width: 467px;
+  height: 300px;
+  margin-top: 15px;
+  border-radius: 10px;
+  padding: 10px;
+  border: 2px solid rgba(145, 0, 0, 0.63);
+}
+
+.status-vida {
+  display: flex;
+  margin-top: 10px;
+}
+
+.botaoStatus {
+  width: 50px;
+  border: none;
+  background: rgba(145, 0, 0, 0.63);
+  font-size: 20px;
+  margin: 2px;
+  /* background: rgb(158,2,2); */
+  /* background: linear-gradient(90deg, rgba(158,2,2,1) 0%, rgb(0, 0, 0) 90%); */
+  /* border: 2px solid rgb(58, 1, 1); */
+  border-radius: 5px;
   color: white;
 }
 
+.heart 
+{
+  width: 25px;
+}
+
+.progress-bar{
+  width: 300px;
+  height: 25px;
+  background-color: white;
+
+}
 /* .nomePersonagem {
   margin-top: 10px;
   margin-left: 15px;
