@@ -1,24 +1,3 @@
-const barra = document.getElementById('barra');
-let porcentagemBarra = 100;
-
-function setProgress(valor) {
-  barra.style.width = valor + '%';
-  if (valor >= 51) {
-    barra.classList.add('green');
-    barra.classList.remove('yellow', 'red');
-  } else if (valor >= 11 ) {
-    barra.classList.add('yellow');
-    barra.classList.remove('green', 'red');
-  } else if (valor >= 1) {
-    barra.classList.add('red');
-    barra.classList.remove('green', 'yellow');
-  } else {
-    barra.classList.remove('green', 'yellow', 'red');
-  }
-}
-
-setProgress(100);
-
 const buttonsLife = document.querySelectorAll(".buttonStatus");
 const life = document.querySelector("#heart");
 
@@ -31,34 +10,65 @@ buttonsLife.forEach((botao) => {
   });
 });
 
+const barra = document.getElementById('barra');
+let maxLife = 20;
+let porcentagemBarra = 100;
+let infoPorcentLife = barra.innerHTML = `${((porcentagemBarra / 100) * maxLife)}/${maxLife}`; 
+
+function setProgress(valor) {
+  barra.style.width = valor + '%';
+  if (valor >= 51) {
+    barra.classList.add('green');
+    barra.classList.remove('yellow', 'red');
+    console.log('valor >>>>', valor)
+  } else if (valor >= 11 ) {
+    barra.classList.add('yellow');
+    barra.classList.remove('green', 'red');
+    console.log('valor >>>>', valor)
+  } else if (valor >= 1) {
+    barra.classList.add('red');
+    barra.classList.remove('green', 'yellow');
+    console.log('valor >>>>', valor)
+  } else {
+    barra.classList.remove('green', 'yellow', 'red');
+    console.log('valor >>>>', valor)  
+  }
+}
+
+setProgress(100);
+
 const heartMinusOne = document.getElementById("heartMinusOne");
 heartMinusOne.addEventListener("click", () => {
   if (porcentagemBarra > 0) {
-    porcentagemBarra -= 1;
+    porcentagemBarra -= 5;
     setProgress(porcentagemBarra);
+    barra.innerHTML = `${((porcentagemBarra / 100) * maxLife)}/${maxLife}`;
   }
 });
 
 const heartMinusFive = document.getElementById("heartMinusFive");
 heartMinusFive.addEventListener("click", () => {
-  if (porcentagemBarra > 0) {
-    porcentagemBarra -= 5;
+  if (porcentagemBarra > 20) {
+    porcentagemBarra -= 25;
     setProgress(porcentagemBarra);
+    barra.innerHTML = `${((porcentagemBarra / 100) * maxLife)}/${maxLife}`;
   }
 });
 
 const heartPlusOne = document.getElementById("heartPlusOne");
 heartPlusOne.addEventListener("click", () => {
   if (porcentagemBarra < 100) {
-    porcentagemBarra += 1;
-    setProgress(porcentagemBarra); 
+    porcentagemBarra += 5;
+    setProgress(porcentagemBarra);
+    barra.innerHTML = `${((porcentagemBarra / 100) * maxLife)}/${maxLife}`;
   }
 });
 
 const heartPlusFive = document.getElementById("heartPlusFive");
 heartPlusFive.addEventListener("click", () => {
-  if (porcentagemBarra < 100) {
-    porcentagemBarra += 5;
-    setProgress(porcentagemBarra); 
+  if (porcentagemBarra < 80) {
+    porcentagemBarra += 25;
+    setProgress(porcentagemBarra);
+    barra.innerHTML = `${((porcentagemBarra / 100) * maxLife)}/${maxLife}`;
   }
 });
