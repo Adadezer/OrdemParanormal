@@ -101,31 +101,48 @@
 #heart
 {
   width: 25px;
-  transition: transform 0.2s ease;
+  transition: transform 0.2s ease-in-out;
 }
 
 #heart.pulsando {
-  transform: scale(1.2);
+  transform: scale(1.5);
 }
 
-.progress-bar{
-  width: 300px;
+.progress {
+  width: 100%;
   height: 25px;
-  background-color: white;
-
+  border-radius: 10px;
+  background-color: rgb(20, 20, 20);
+  border: 2px solid rgba(145, 0, 0, 0.63);
 }
 
-/* @keyframes pulse {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.3);
-  }
-  100% {
-    transform: scale(1);
-  }
-} */
+.bar {
+  height: 100%;
+  border-radius: 10px;
+  transition: width 0.3s ease-in-out;
+}
+
+.bar.green {
+  border-radius: 10px;
+  background-color: #00cc00;
+}
+
+.bar.yellow {
+  border-radius: 10px;
+  background-color: #ffcc00;
+}
+
+.bar.red {
+  border-radius: 10px;
+  background-color: #ff3300;
+}
+
+
+
+
+
+
+
 /* .nomePersonagem {
   margin-top: 10px;
   margin-left: 15px;
