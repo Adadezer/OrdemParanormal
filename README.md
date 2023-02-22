@@ -26,11 +26,11 @@ depois
 ## 🧔Autores
 Adadezer Suhita Iwazaki
 
-<a href="https://github.com/Adadezer" target="_blank"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"/></a>
+<a href="https://github.com/Adadezer" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"/></a>
 
 Matheus Roberto de Oliveira
 
-<a href="#" target="_blank"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"/></a>
+<a href="#" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"/></a>
 
 ## 🖱️ Links
 Excalidraw: https://excalidraw.com/#json=8L1edfZNBTtw_9T3pqZmc,u63MA_Qxnvdm81_gQAg0oQ
