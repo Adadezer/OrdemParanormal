@@ -10,15 +10,12 @@
   border: none;
   border-radius: 20px;
   background-color: rgb(0, 0, 0);
-  /* background-color: rgb(182, 228, 182); */
 }
 
 .img-nomes {
   display: flex;
-  /* background-color: yellow; */
 }
 .avatar {
-  /* border: rgb(145, 0, 0) solid 3px; */
   border-radius: 100%;
   width: 150px;
 }
@@ -51,14 +48,12 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
-  /* background-color: aqua; */
 }
 
 .Origem-Classe {
   display: flex;
   align-items: center;
   flex-direction: column;
-  /* background-color: blueviolet; */
 }
 
 .nomeOrigem-Classe {
@@ -85,7 +80,6 @@
 
 .status-vida {
   display: flex;
-  /* margin-top: 10px; */
 }
 
 .seta-button {
@@ -97,17 +91,8 @@
 .buttonStatus {
   width: 25px;
   height: 15px;
-  /* border: none; */
-  /* background: transparent; */
-  /* background: rgba(145, 0, 0, 0.63); */
-  /* font-size: 20px; */
   margin: 3px;
   margin-right: 5px;
-  /* background: rgb(158,2,2); */
-  /* background: linear-gradient(90deg, rgba(158,2,2,1) 0%, rgb(0, 0, 0) 90%); */
-  /* border: 2px solid rgb(58, 1, 1); */
-  /* border-radius: 5px; */
-  /* color: white; */
 }
 
 .buttonStatus:hover {
@@ -118,7 +103,6 @@
 .seta {
   width: 15px;
   height: 15px;
-
 }
 
 #heart
