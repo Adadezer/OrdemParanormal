@@ -15,9 +15,9 @@ buttonsLife.forEach((botao) => {
 // CÓDIGO DA BARRA DE PROGRESSO
 
 const barra = document.getElementById('barra');
-let maxLife = 80;
+let maxLife = 85;
 let porcentagemBarra = 100;
-barra.innerHTML = `${((porcentagemBarra / 100) * maxLife)}/${maxLife}`; 
+barra.innerHTML = `${(porcentagemBarra / 100) * maxLife}/${maxLife}`; 
 
 function setProgress(valor) {
   barra.style.width = valor + '%';
@@ -48,7 +48,7 @@ heartMinusOne.addEventListener("click", () => {
   if (porcentagemBarra > 0) {
     porcentagemBarra -= (100 / maxLife); // 5%
     setProgress(porcentagemBarra);
-    barra.innerHTML = `${((porcentagemBarra / 100) * maxLife)}/${maxLife}`;
+    barra.innerHTML = `${Math.trunc((porcentagemBarra / 100) * maxLife)}/${maxLife}`;
   }
 });
 
@@ -58,7 +58,7 @@ heartMinusFive.addEventListener("click", () => {
   if (porcentagemBarra >= ( ( 100 / (maxLife / 5) ) )) {
     porcentagemBarra -= (100 / (maxLife / 5)); // 25%
     setProgress(porcentagemBarra);
-    barra.innerHTML = `${((porcentagemBarra / 100) * maxLife)}/${maxLife}`;
+    barra.innerHTML = `${Math.trunc((porcentagemBarra / 100) * maxLife)}/${maxLife}`;
   }
 });
 
@@ -67,7 +67,7 @@ heartPlusOne.addEventListener("click", () => {
   if (porcentagemBarra < 100) {
     porcentagemBarra += (100 / maxLife); // 5%
     setProgress(porcentagemBarra);
-    barra.innerHTML = `${((porcentagemBarra / 100) * maxLife)}/${maxLife}`;
+    barra.innerHTML = `${Math.trunc((porcentagemBarra / 100) * maxLife)}/${maxLife}`;
   }
 });
 
@@ -77,6 +77,6 @@ heartPlusFive.addEventListener("click", () => {
   if (porcentagemBarra <= 100 - ( 100 / (maxLife / 5) )) {
     porcentagemBarra += (100 / (maxLife / 5)); // 25%
     setProgress(porcentagemBarra);
-    barra.innerHTML = `${((porcentagemBarra / 100) * maxLife)}/${maxLife}`;
+    barra.innerHTML = `${Math.trunc((porcentagemBarra / 100) * maxLife)}/${maxLife}`;
   }
 });
