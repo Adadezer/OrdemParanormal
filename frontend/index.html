@@ -10,6 +10,7 @@
 </head>
 <body>
   <div class="container">
+
     <div class="img-nomes">
       <img src="./Images/avatarDante.jpg" class="avatar" />
       <div class="containerJogador-Personagem">
@@ -40,19 +41,35 @@
     </div>
 
     <div class="status">
-      <div id="tituloVida">Vida</div>
+
+      <div id="tituloVida" class="tituloStatus">Vida</div>
       <div class="status-vida">
         <img id="heart" src="./Images/Life.png" />
-        <img src="./Images/setaMenos1.png" id="heartMinusOne" class="buttonStatus"/>
-        <img src="./Images/setaMenos5.png" id="heartMinusFive" class="buttonStatus" />
-        <div class="progress">
-          <div class="bar" id="barra"></div>
+        <img src="./Images/setaMenos1.png" id="heartMinusOne" class="buttonStatusLife"/>
+        <img src="./Images/setaMenos5.png" id="heartMinusFive" class="buttonStatusLife" />
+        <div class="progressLife">
+          <div class="barLife" id="barraVida"></div>
         </div>        
-        <img src="./Images/setaMais1.png" id="heartPlusOne" class="buttonStatus" />
-        <img src="./Images/setaMais5.png" id="heartPlusFive" class="buttonStatus" />
+        <img src="./Images/setaMais1.png" id="heartPlusOne" class="buttonStatusLife" />
+        <img src="./Images/setaMais5.png" id="heartPlusFive" class="buttonStatusLife" />
       </div>
+
+      <div id="tituloSanidade" class="tituloStatus">Sanidade</div>
+      <div class="status-sanidade">
+        <img id="sanity" src="./Images/Sanity.png" />
+        <img src="./Images/setaMenos1.png" id="sanityMinusOne" class="buttonStatusSanity"/>
+        <img src="./Images/setaMenos5.png" id="sanityMinusFive" class="buttonStatusSanity" />
+        <div class="progressSanity">
+          <div class="barSanity" id="barraSanidade"></div>
+        </div>        
+        <img src="./Images/setaMais1.png" id="sanityPlusOne" class="buttonStatusSanity" />
+        <img src="./Images/setaMais5.png" id="sanityPlusFive" class="buttonStatusSanity" />
+      </div>
+
     </div>
+  
   </div>
-  <script src="./JavaScript/script.js"></script>
+  <script src="./JavaScript/scriptStatusVida.js"></script>
+  <script src="./JavaScript/scriptStatusSanidade.js"></script>
 </body>
 </html>
