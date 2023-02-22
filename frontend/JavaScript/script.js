@@ -13,7 +13,7 @@ buttonsLife.forEach((botao) => {
 const barra = document.getElementById('barra');
 let maxLife = 20;
 let porcentagemBarra = 100;
-let infoPorcentLife = barra.innerHTML = `${((porcentagemBarra / 100) * maxLife)}/${maxLife}`; 
+barra.innerHTML = `${((porcentagemBarra / 100) * maxLife)}/${maxLife}`; 
 
 function setProgress(valor) {
   barra.style.width = valor + '%';
@@ -40,7 +40,7 @@ setProgress(100);
 const heartMinusOne = document.getElementById("heartMinusOne");
 heartMinusOne.addEventListener("click", () => {
   if (porcentagemBarra > 0) {
-    porcentagemBarra -= 5;
+    porcentagemBarra -= (100 / maxLife); // 5%
     setProgress(porcentagemBarra);
     barra.innerHTML = `${((porcentagemBarra / 100) * maxLife)}/${maxLife}`;
   }
@@ -48,8 +48,9 @@ heartMinusOne.addEventListener("click", () => {
 
 const heartMinusFive = document.getElementById("heartMinusFive");
 heartMinusFive.addEventListener("click", () => {
-  if (porcentagemBarra > 20) {
-    porcentagemBarra -= 25;
+  // se % for maior ou igual os 25% q ele vai tirar
+  if (porcentagemBarra >= ( ( 100 / (maxLife / 5) ) )) {
+    porcentagemBarra -= (100 / (maxLife / 5)); // 25%
     setProgress(porcentagemBarra);
     barra.innerHTML = `${((porcentagemBarra / 100) * maxLife)}/${maxLife}`;
   }
@@ -58,7 +59,7 @@ heartMinusFive.addEventListener("click", () => {
 const heartPlusOne = document.getElementById("heartPlusOne");
 heartPlusOne.addEventListener("click", () => {
   if (porcentagemBarra < 100) {
-    porcentagemBarra += 5;
+    porcentagemBarra += (100 / maxLife); // 5%
     setProgress(porcentagemBarra);
     barra.innerHTML = `${((porcentagemBarra / 100) * maxLife)}/${maxLife}`;
   }
@@ -66,8 +67,9 @@ heartPlusOne.addEventListener("click", () => {
 
 const heartPlusFive = document.getElementById("heartPlusFive");
 heartPlusFive.addEventListener("click", () => {
-  if (porcentagemBarra < 80) {
-    porcentagemBarra += 25;
+  // se % for menor ou igual q 100 menos os 25% q ele vai tirar, com maxLife 20, % < 80 (100 - 20)
+  if (porcentagemBarra <= 100 - ( 100 / (maxLife / 5) )) {
+    porcentagemBarra += (100 / (maxLife / 5)); // 25%
     setProgress(porcentagemBarra);
     barra.innerHTML = `${((porcentagemBarra / 100) * maxLife)}/${maxLife}`;
   }
