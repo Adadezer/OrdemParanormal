@@ -31,7 +31,7 @@ let maxLife = 22;
 let porcentagemBarraVida = 100;
 barraVida.innerHTML = `${(porcentagemBarraVida / 100) * maxLife}/${maxLife}`; 
 
-function setProgress(valor) {
+function setProgressLife(valor) {
   barraVida.style.width = valor + '%';
   if (valor >= 51) {
     barraVida.classList.add('green');
@@ -51,7 +51,7 @@ function setProgress(valor) {
   }
 }
 
-setProgress(100);
+setProgressLife(100);
 
 // CÓDIGO DOS BOTÕES PARA DIMINUIR/AUMENTAR A BARRA DE PROGRESSO
 
@@ -59,7 +59,7 @@ const heartMinusOne = document.getElementById("heartMinusOne");
 heartMinusOne.addEventListener("click", () => {
   if (porcentagemBarraVida > 0) {
     porcentagemBarraVida -= (100 / maxLife); // 5%
-    setProgress(porcentagemBarraVida);
+    setProgressLife(porcentagemBarraVida);
     barraVida.innerHTML = `${Math.trunc((porcentagemBarraVida / 100) * maxLife)}/${maxLife}`;
   }
 });
@@ -69,7 +69,7 @@ heartMinusFive.addEventListener("click", () => {
   // se % for maior ou igual os 25% q ele vai tirar
   if (porcentagemBarraVida >= ( ( 100 / (maxLife / 5) ) )) {
     porcentagemBarraVida -= (100 / (maxLife / 5)); // 25%
-    setProgress(porcentagemBarraVida);
+    setProgressLife(porcentagemBarraVida);
     barraVida.innerHTML = `${Math.trunc((porcentagemBarraVida / 100) * maxLife)}/${maxLife}`;
   }
 });
@@ -78,7 +78,7 @@ const heartPlusOne = document.getElementById("heartPlusOne");
 heartPlusOne.addEventListener("click", () => {
   if (porcentagemBarraVida < 100) {
     porcentagemBarraVida += (100 / maxLife); // 5%
-    setProgress(porcentagemBarraVida);
+    setProgressLife(porcentagemBarraVida);
     barraVida.innerHTML = `${Math.trunc((porcentagemBarraVida / 100) * maxLife)}/${maxLife}`;
   }
 });
@@ -88,7 +88,7 @@ heartPlusFive.addEventListener("click", () => {
   // se % for menor ou igual q 100 menos os 25% q ele vai tirar, com maxLife 20, if % < 80 (100 - 20)
   if (porcentagemBarraVida <= 100 - ( 100 / (maxLife / 5) )) {
     porcentagemBarraVida += (100 / (maxLife / 5)); // 25%
-    setProgress(porcentagemBarraVida);
+    setProgressLife(porcentagemBarraVida);
     barraVida.innerHTML = `${Math.trunc((porcentagemBarraVida / 100) * maxLife)}/${maxLife}`;
   }
 });
