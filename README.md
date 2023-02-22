@@ -14,7 +14,7 @@ Atualmente está em fase de desenvolvimento, e tem finalidades educacionais (al�
 ## ⚙️ Como Utilizar
  1- Abra o terminal, clone o projeto e entre em sua pasta:
 
- - `git clone git@github.com:Adadezer/OrdemParanormal.git` ou  `https://github.com/Adadezer/OrdemParanormal.git`
+ - `git clone git@github.com:Adadezer/OrdemParanormal.git` ou `git clone https://github.com/Adadezer/OrdemParanormal.git`
 depois
 - `cd OrdemParanormal`
 
@@ -25,10 +25,12 @@ depois
 
 ## 🧔Autores
 Adadezer Suhita Iwazaki
-<a href="https://github.com/Adadezer" ><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"/></a>
+
+<a href="https://github.com/Adadezer" target="_blank"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"/></a>
 
 Matheus Roberto de Oliveira
-<a href="#" ><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"/></a>
+
+<a href="#" target="_blank"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"/></a>
 
 ## 🖱️ Links
 Excalidraw: https://excalidraw.com/#json=8L1edfZNBTtw_9T3pqZmc,u63MA_Qxnvdm81_gQAg0oQ
