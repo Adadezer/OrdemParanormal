@@ -3,7 +3,6 @@
 const buttonsLife = document.querySelectorAll(".buttonStatusLife");
 const life = document.querySelector("#heart");
 
-
 buttonsLife.forEach((botao) => {
   botao.addEventListener('click', () => {
     life.classList.add('pulsando');
@@ -11,17 +10,6 @@ buttonsLife.forEach((botao) => {
       life.classList.remove('pulsando');
     }, 100);
   });
-});
-
-// CÓDIGO HOVER DO TITULO VIDA
-
-const tituloVida = document.querySelector("#tituloVida");
-life.addEventListener('mouseover', () => {
-  tituloVida.style.color = 'rgb(201, 164, 0)';
-});
-
-life.addEventListener('mouseout', () => {
-  tituloVida.style.color = '';
 });
 
 // CÓDIGO DA BARRA DE PROGRESSO

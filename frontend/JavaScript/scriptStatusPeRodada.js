@@ -3,7 +3,6 @@
 const buttonsPeRodada = document.querySelectorAll(".buttonStatusPeRodada");
 const peRodada = document.querySelector("#peRodada");
 
-
 buttonsPeRodada.forEach((botao) => {
   botao.addEventListener('click', () => {
     peRodada.classList.add('pulsando');
@@ -11,17 +10,6 @@ buttonsPeRodada.forEach((botao) => {
       peRodada.classList.remove('pulsando');
     }, 100);
   });
-});
-
-// CÓDIGO HOVER DO TITULO DOS PONTOS DE ESFORÇO POR RODADA
-
-const tituloPeRodada = document.querySelector("#tituloPeRodada");
-peRodada.addEventListener('mouseover', () => {
-  tituloPeRodada.style.color = 'rgb(201, 164, 0)';
-});
-
-peRodada.addEventListener('mouseout', () => {
-  tituloPeRodada.style.color = '';
 });
 
 // CÓDIGO DA BARRA DE PROGRESSO
