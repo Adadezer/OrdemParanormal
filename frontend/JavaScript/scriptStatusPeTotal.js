@@ -3,7 +3,6 @@
 const buttonsPeTotal = document.querySelectorAll(".buttonStatusPeTotal");
 const peTotal = document.querySelector("#peTotal");
 
-
 buttonsPeTotal.forEach((botao) => {
   botao.addEventListener('click', () => {
     peTotal.classList.add('pulsando');
@@ -11,17 +10,6 @@ buttonsPeTotal.forEach((botao) => {
       peTotal.classList.remove('pulsando');
     }, 100);
   });
-});
-
-// CÓDIGO HOVER DO TITULO DOS PONTOS DE ESFORÇO TOTAL
-
-const tituloPeTotal = document.querySelector("#tituloPeTotal");
-peTotal.addEventListener('mouseover', () => {
-  tituloPeTotal.style.color = 'rgb(201, 164, 0)';
-});
-
-peTotal.addEventListener('mouseout', () => {
-  tituloPeTotal.style.color = '';
 });
 
 // CÓDIGO DA BARRA DE PROGRESSO

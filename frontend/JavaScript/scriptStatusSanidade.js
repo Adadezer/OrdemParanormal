@@ -2,6 +2,7 @@
 
 const buttonsSanity = document.querySelectorAll(".buttonStatusSanity");
 const sanity = document.querySelector("#sanity");
+
 buttonsSanity.forEach((botao) => {
   botao.addEventListener('click', () => {
     sanity.classList.add('pulsando');
@@ -9,17 +10,6 @@ buttonsSanity.forEach((botao) => {
       sanity.classList.remove('pulsando');
     }, 100);
   });
-});
-
-// CÓDIGO HOVER DO TITULO SANIDADE
-
-const tituloSanidade = document.querySelector("#tituloSanidade");
-sanity.addEventListener('mouseover', () => {
-  tituloSanidade.style.color = 'rgb(201, 164, 0)';
-});
-
-sanity.addEventListener('mouseout', () => {
-  tituloSanidade.style.color = '';
 });
 
 // CÓDIGO DA BARRA DE PROGRESSO
