@@ -1,4 +1,4 @@
-// CÓDIGO DOS PONTOS DE ESFORÇO PULSANDO
+// CÓDIGO DOS PONTOS DE ESFORÇO POR RODADA PULSANDO
 
 const buttonsPeRodada = document.querySelectorAll(".buttonStatusPeRodada");
 const peRodada = document.querySelector("#peRodada");
@@ -13,7 +13,7 @@ buttonsPeRodada.forEach((botao) => {
   });
 });
 
-// CÓDIGO HOVER DO TITULO DOS PONTOS DE ESFORÇO
+// CÓDIGO HOVER DO TITULO DOS PONTOS DE ESFORÇO POR RODADA
 
 const tituloPeRodada = document.querySelector("#tituloPeRodada");
 peRodada.addEventListener('mouseover', () => {
