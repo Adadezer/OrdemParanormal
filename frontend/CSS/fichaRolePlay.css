@@ -67,22 +67,22 @@
   text-align: center;
 }
 
-.status {
+.status, .defensivos {
   display: flex;
   flex-direction: column;
   width: 467px;
-  height: 300px;
+  height: 240px;
   margin-top: 15px;
   border-radius: 10px;
   padding: 10px;
   border: 2px solid rgba(145, 0, 0, 0.63);
 }
 
-.tituloStatus {
+.tituloStatus, .tituloDefensivos {
   color: black;
 }
 
-.status-vida, .status-sanidade, .status-peRodada, .status-peTotal {
+.status-vida, .status-sanidade, .status-peRodada, .status-peTotal, .def-defesa {
   display: flex;
   align-items: center;
 }
@@ -100,15 +100,12 @@
 .buttonStatusPeTotal:hover {
   width: 27px;
   height: 17px;
+  cursor: pointer;
 }
 
-#heart, #sanity, #peRodada, #peTotal {
+#heart, #sanity, #peRodada, #peTotal, #defesa {
   width: 30px;
   transition: transform 0.2s ease-in-out;
-}
-
-#sanity{
-  width: 34px;
 }
 
 #heart.pulsando, #sanity.pulsando, #peRodada.pulsando, #peTotal.pulsando {
@@ -146,11 +143,25 @@
   background-color: #ff3300;
 }
 
-
-
-
-
-
+input {
+  width: 100px;
+  height: 30px;
+  margin-left: 1px;
+  background-color: black;
+  border: 2px solid rgba(145, 0, 0, 0.63);
+  border-radius: 5px;
+  outline: 0;
+  color: white;
+  font-size: 20px;
+}
+input[type=number]::-webkit-inner-spin-button { 
+  height: 35px;
+  margin: 10px;
+  padding: 5px;
+  transform: rotate(90deg);
+  filter: drop-shadow(5px 50px 10px rgb(255, 0, 0)) opacity(30%);
+  cursor: pointer;
+}
 
 /* .nomePersonagem {
   margin-top: 10px;
