@@ -82,24 +82,27 @@
   color: black;
 }
 
-.status-vida, .status-sanidade {
+.status-vida, .status-sanidade, .status-peRodada, .status-peTotal {
   display: flex;
   align-items: center;
 }
 
-.buttonStatusLife, .buttonStatusSanity {
+.buttonStatusLife, .buttonStatusSanity, .buttonStatusPeRodada, .buttonStatusPeTotal {
   width: 25px;
   height: 15px;
   margin: 3px;
   margin-right: 5px;
 }
 
-.buttonStatusLife:hover, .buttonStatusSanity:hover {
+.buttonStatusLife:hover,
+.buttonStatusSanity:hover,
+.buttonStatusPeRodada:hover,
+.buttonStatusPeTotal:hover {
   width: 27px;
   height: 17px;
 }
 
-#heart, #sanity {
+#heart, #sanity, #peRodada, #peTotal {
   width: 30px;
   transition: transform 0.2s ease-in-out;
 }
@@ -108,11 +111,11 @@
   width: 34px;
 }
 
-#heart.pulsando, #sanity.pulsando {
+#heart.pulsando, #sanity.pulsando, #peRodada.pulsando, #peTotal.pulsando {
   transform: scale(1.5);
 }
 
-.progressLife, .progressSanity {
+.progressLife, .progressSanity, .progressPeRodada, .progressPeTotal {
   width: 100%;
   height: 25px;
   border-radius: 10px;
@@ -120,7 +123,7 @@
   border: 2px solid rgba(145, 0, 0, 0.63);
 }
 
-.barLife, .barSanity {
+.barLife, .barSanity, .barPeRodada, .barPeTotal {
   height: 100%;
   border-radius: 10px;
   transition: width 0.3s ease-in-out;
@@ -128,17 +131,17 @@
   font-weight: 600;
 }
 
-.barLife.green, .barSanity.green {
+.barLife.green, .barSanity.green, .barPeRodada.green, .barPeTotal.green {
   border-radius: 10px;
   background-color: #00cc00;
 }
 
-.barLife.yellow, .barSanity.yellow {
+.barLife.yellow, .barSanity.yellow, .barPeRodada.yellow, .barPeTotal.yellow {
   border-radius: 10px;
   background-color: #ffcc00;
 }
 
-.barLife.red, .barSanity.red {
+.barLife.red, .barSanity.red, .barPeRodada.red, .barPeTotal.red {
   border-radius: 10px;
   background-color: #ff3300;
 }
