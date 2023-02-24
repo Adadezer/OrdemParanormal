@@ -32,7 +32,7 @@
   flex-direction: column;
 }
 
-.nomeJogador-Personagem {
+.nomeJogador-Personagem, .quantStatusDefensivos {
   width: 100%;
   height: 50px;
   border: 0;
@@ -44,8 +44,12 @@
   color: white;
 }
 
-.nomeJogador-Personagem:focus
-{
+.quantStatusDefensivos {
+  width: 50px;
+  height: 30px;
+}
+
+.nomeJogador-Personagem:focus, .quantStatusDefensivos:focus {
   animation: border-fade 1s infinite alternate;
 }
 
@@ -92,11 +96,24 @@
   border: 2px solid rgba(145, 0, 0, 0.63);
 }
 
+.defensivos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  height: 100px;
+}
+
 .tituloStatus, .tituloDefensivos {
   color: black;
 }
 
-.status-vida, .status-sanidade, .status-peRodada, .status-peTotal, .def-defesa {
+.status-vida,
+.status-sanidade,
+.status-peRodada,
+.status-peTotal,
+.def-defesa,
+.def-reflexo,
+.def-bloqueio {
   display: flex;
   align-items: center;
 }
@@ -117,9 +134,25 @@
   cursor: pointer;
 }
 
-#heart, #sanity, #peRodada, #peTotal, #defesa {
+#heart, #sanity, #peRodada, #peTotal, #defesa, #reflexo, #bloqueio {
   width: 30px;
+  margin-right: 10px;
   transition: transform 0.2s ease-in-out;
+}
+
+#defesa {
+  height: 30px;
+  margin-right: 5px;
+}
+
+#reflexo {
+  width: 45px;
+  height: 30px;
+  margin-right: 5px;
+}
+
+#bloqueio {
+  height: 27px;
 }
 
 #heart.pulsando, #sanity.pulsando, #peRodada.pulsando, #peTotal.pulsando {
@@ -144,20 +177,20 @@
 
 .barLife.green, .barSanity.green, .barPeRodada.green, .barPeTotal.green {
   border-radius: 10px;
-  background-color: #00cc00;
+  background-color: #087008;
 }
 
 .barLife.yellow, .barSanity.yellow, .barPeRodada.yellow, .barPeTotal.yellow {
   border-radius: 10px;
-  background-color: #ffcc00;
+  background-color: #856d0e;
 }
 
 .barLife.red, .barSanity.red, .barPeRodada.red, .barPeTotal.red {
   border-radius: 10px;
-  background-color: #ff3300;
+  background-color: #992a0e;
 }
 
-input {
+/* input {
   width: 100px;
   height: 30px;
   margin-left: 1px;
@@ -175,4 +208,4 @@ input[type=number]::-webkit-inner-spin-button {
   transform: rotate(90deg);
   filter: drop-shadow(5px 50px 10px rgb(255, 0, 0)) opacity(30%);
   cursor: pointer;
-}
+} */

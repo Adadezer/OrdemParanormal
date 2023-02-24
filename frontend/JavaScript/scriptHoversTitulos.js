@@ -41,10 +41,33 @@ peTotal.addEventListener('mouseout', () => {
 
 // CÓDIGO HOVER DO TITULO DEFESA
 const tituloDefesa = document.querySelector("#tituloDefesa");
+const defesa = document.querySelector("#defesa");
 defesa.addEventListener('mouseover', () => {
   tituloDefesa.style.color = 'purple';
 });
 
 defesa.addEventListener('mouseout', () => {
   tituloDefesa.style.color = '';
+});
+
+// CÓDIGO HOVER DO TITULO REFLEXO
+const tituloReflexo = document.querySelector("#tituloReflexo");
+const reflexo = document.querySelector("#reflexo");
+reflexo.addEventListener('mouseover', () => {
+  tituloReflexo.style.color = 'purple';
+});
+
+reflexo.addEventListener('mouseout', () => {
+  tituloReflexo.style.color = '';
+});
+
+// CÓDIGO HOVER DO TITULO BLOQUEIO
+const tituloBloqueio = document.querySelector("#tituloBloqueio");
+const bloqueio = document.querySelector("#bloqueio");
+bloqueio.addEventListener('mouseover', () => {
+  tituloBloqueio.style.color = 'purple';
+});
+
+bloqueio.addEventListener('mouseout', () => {
+  tituloBloqueio.style.color = '';
 });
