@@ -32,7 +32,7 @@
   flex-direction: column;
 }
 
-.nomeJogador-Personagem {
+.nomeJogador-Personagem, .quantStatusDefensivos {
   width: 100%;
   height: 50px;
   border: 0;
@@ -41,7 +41,28 @@
   background: transparent;
   font-size: large;
   text-align: center;
+  color: purple;
+  font-family: Lacquer;
+}
+
+.quantStatusDefensivos {
+  width: 50px;
+  height: 30px;
+  font-size: 25px;
   color: white;
+}
+
+.nomeJogador-Personagem:focus, .quantStatusDefensivos:focus {
+  animation: border-fade 1s infinite alternate;
+}
+
+@keyframes border-fade {
+  0% {
+    border-color: red;
+  }
+  100% {
+    border-color: purple;
+  }
 }
 
 .orgm-class {
@@ -70,21 +91,43 @@
 .status, .defensivos {
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
   width: 467px;
-  height: 240px;
-  margin-top: 15px;
+  height: 235px;
+  margin-top: 15px;  
   border-radius: 10px;
-  padding: 10px;
   border: 2px solid rgba(145, 0, 0, 0.63);
+}
+
+.status {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.defensivos {
+  display: flex;
+  flex-direction: row;
+  height: 80px;
+  padding: 0;
 }
 
 .tituloStatus, .tituloDefensivos {
   color: black;
 }
 
-.status-vida, .status-sanidade, .status-peRodada, .status-peTotal, .def-defesa {
+.status-vida,
+.status-sanidade,
+.status-peRodada,
+.status-peTotal,
+.def-defesa,
+.def-reflexo,
+.def-bloqueio {
   display: flex;
   align-items: center;
+}
+
+.status-peTotal {
+  padding-bottom: 20px;
 }
 
 .buttonStatusLife, .buttonStatusSanity, .buttonStatusPeRodada, .buttonStatusPeTotal {
@@ -103,9 +146,25 @@
   cursor: pointer;
 }
 
-#heart, #sanity, #peRodada, #peTotal, #defesa {
+#heart, #sanity, #peRodada, #peTotal, #defesa, #reflexo, #bloqueio {
   width: 30px;
+  margin-right: 10px;
   transition: transform 0.2s ease-in-out;
+}
+
+#defesa {
+  height: 30px;
+  margin-right: 5px;
+}
+
+#reflexo {
+  width: 45px;
+  height: 30px;
+  margin-right: 5px;
+}
+
+#bloqueio {
+  height: 27px;
 }
 
 #heart.pulsando, #sanity.pulsando, #peRodada.pulsando, #peTotal.pulsando {
@@ -130,20 +189,20 @@
 
 .barLife.green, .barSanity.green, .barPeRodada.green, .barPeTotal.green {
   border-radius: 10px;
-  background-color: #00cc00;
+  background-color: #087008;
 }
 
 .barLife.yellow, .barSanity.yellow, .barPeRodada.yellow, .barPeTotal.yellow {
   border-radius: 10px;
-  background-color: #ffcc00;
+  background-color: #856d0e;
 }
 
 .barLife.red, .barSanity.red, .barPeRodada.red, .barPeTotal.red {
   border-radius: 10px;
-  background-color: #ff3300;
+  background-color: #992a0e;
 }
 
-input {
+/* input {
   width: 100px;
   height: 30px;
   margin-left: 1px;
@@ -161,34 +220,4 @@ input[type=number]::-webkit-inner-spin-button {
   transform: rotate(90deg);
   filter: drop-shadow(5px 50px 10px rgb(255, 0, 0)) opacity(30%);
   cursor: pointer;
-}
-
-/* .nomePersonagem {
-  margin-top: 10px;
-  margin-left: 15px;
-  width: 200px;
-  height: 50px;
-  border-top: transparent;
-  border-left: transparent;
-  border-right: transparent;
-  border: 0;
-  outline: 0;
-  border-bottom: rgb(145, 0, 0) 2px solid;
-  transition: border-color 0.5s;
-  background-color: rgba(0, 0, 0, 0.171);
-  color: white;
-}
-
-.nomePersonagem:focus
-{
-  animation: border-fade 1s infinite alternate;
-}
-
-@keyframes border-fade {
-  0% {
-    border-color: red;
-  }
-  100% {
-    border-color: purple;
-  }
 } */
