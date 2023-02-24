@@ -44,6 +44,20 @@
   color: white;
 }
 
+.nomeJogador-Personagem:focus
+{
+  animation: border-fade 1s infinite alternate;
+}
+
+@keyframes border-fade {
+  0% {
+    border-color: red;
+  }
+  100% {
+    border-color: purple;
+  }
+}
+
 .orgm-class {
   display: flex;
   align-items: center;
@@ -162,33 +176,3 @@ input[type=number]::-webkit-inner-spin-button {
   filter: drop-shadow(5px 50px 10px rgb(255, 0, 0)) opacity(30%);
   cursor: pointer;
 }
-
-/* .nomePersonagem {
-  margin-top: 10px;
-  margin-left: 15px;
-  width: 200px;
-  height: 50px;
-  border-top: transparent;
-  border-left: transparent;
-  border-right: transparent;
-  border: 0;
-  outline: 0;
-  border-bottom: rgb(145, 0, 0) 2px solid;
-  transition: border-color 0.5s;
-  background-color: rgba(0, 0, 0, 0.171);
-  color: white;
-}
-
-.nomePersonagem:focus
-{
-  animation: border-fade 1s infinite alternate;
-}
-
-@keyframes border-fade {
-  0% {
-    border-color: red;
-  }
-  100% {
-    border-color: purple;
-  }
-} */

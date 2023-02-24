@@ -1,7 +1,7 @@
 // CÓDIGO HOVER DO TITULO VIDA
 const tituloVida = document.querySelector("#tituloVida");
 life.addEventListener('mouseover', () => {
-  tituloVida.style.color = 'rgb(201, 164, 0)';
+  tituloVida.style.color = 'purple';
 });
 
 life.addEventListener('mouseout', () => {
@@ -11,7 +11,7 @@ life.addEventListener('mouseout', () => {
 // CÓDIGO HOVER DO TITULO SANIDADE
 const tituloSanidade = document.querySelector("#tituloSanidade");
 sanity.addEventListener('mouseover', () => {
-  tituloSanidade.style.color = 'rgb(201, 164, 0)';
+  tituloSanidade.style.color = 'purple';
 });
 
 sanity.addEventListener('mouseout', () => {
@@ -21,7 +21,7 @@ sanity.addEventListener('mouseout', () => {
 // CÓDIGO HOVER DO TITULO DOS PONTOS DE ESFORÇO POR RODADA
 const tituloPeRodada = document.querySelector("#tituloPeRodada");
 peRodada.addEventListener('mouseover', () => {
-  tituloPeRodada.style.color = 'rgb(201, 164, 0)';
+  tituloPeRodada.style.color = 'purple';
 });
 
 peRodada.addEventListener('mouseout', () => {
@@ -32,7 +32,7 @@ peRodada.addEventListener('mouseout', () => {
 // CÓDIGO HOVER DO TITULO DOS PONTOS DE ESFORÇO TOTAL
 const tituloPeTotal = document.querySelector("#tituloPeTotal");
 peTotal.addEventListener('mouseover', () => {
-  tituloPeTotal.style.color = 'rgb(201, 164, 0)';
+  tituloPeTotal.style.color = 'purple';
 });
 
 peTotal.addEventListener('mouseout', () => {
@@ -42,7 +42,7 @@ peTotal.addEventListener('mouseout', () => {
 // CÓDIGO HOVER DO TITULO DEFESA
 const tituloDefesa = document.querySelector("#tituloDefesa");
 defesa.addEventListener('mouseover', () => {
-  tituloDefesa.style.color = 'rgb(201, 164, 0)';
+  tituloDefesa.style.color = 'purple';
 });
 
 defesa.addEventListener('mouseout', () => {
