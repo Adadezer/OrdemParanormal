@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ficha Role Play Betinho</title>
+
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
     integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
@@ -15,16 +15,16 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lacquer&display=swap" rel="stylesheet">
-
 </head>
 
 <body>
   <div class="container">
-    <!-- Button trigger modal -->
-    <img src="./Images/ResistenciaFisica.png" class="btn btnResistenciaFisica" data-toggle="modal" data-target="#exampleModal" />
+    <!-- Button trigger modal resistência física-->
+    <img src="./Images/ResistenciaFisica.png" class="btn btnResistenciaFisica" data-toggle="modal"
+      data-target="#ModalResistenciaFisica" />
 
-    <!-- Modal -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    <!-- Modal resistência física-->
+    <div class="modal fade" id="ModalResistenciaFisica" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
       aria-hidden="true">
       <div class="modal-dialog" role="document">
         <div class="modal-content cardModal">
@@ -32,8 +32,105 @@
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
-            <h3 class="modal-title" id="exampleModalLabel">Resistências Físicas</h3>
-            <p>Wohoo</p>
+            <h3 class="modal-title centralizarTitulos" id="exampleModalLabel">Resistências Físicas</h3>
+            <div class="organizacaoColuna">
+              <div class="resistenciaFisicaEsquerdo">
+                <div>
+                  Balistica:
+                  <input type="text" class="quantStatusResistenciaFisica" />
+                </div>
+                <div>
+                  Corte:
+                  <input type="text" class="quantStatusResistenciaFisica" />
+                </div>
+                <div>
+                  Eletricidade:
+                  <input type="text" class="quantStatusResistenciaFisica" />
+                </div>
+                <div>
+                  Impacto:
+                  <input type="text" class="quantStatusResistenciaFisica" />
+                </div>
+                <div>
+                  Fogo:
+                  <input type="text" class="quantStatusResistenciaFisica" />
+                </div>
+              </div>
+
+              <div class="resistenciaFisicaDireito">
+                <div>
+                  Frio:
+                  <input type="text" class="quantStatusResistenciaFisica" />
+                </div>
+                <div>
+                  Perfuração:
+                  <input type="text" class="quantStatusResistenciaFisica" />
+                </div>
+                <div>
+                  Paranormal:
+                  <input type="text" class="quantStatusResistenciaFisica" />
+                </div>
+                <div>
+                  Mental:
+                  <input type="text" class="quantStatusResistenciaFisica" />
+                </div>
+                <div>
+                  Química:
+                  <input type="text" class="quantStatusResistenciaFisica" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Button trigger modal resistência paranormal-->
+    <img src="./Images/ResistenciaParanormal.png" class="btn btnResistenciaParanormal" data-toggle="modal"
+      data-target="#ModalResistenciaParanormal" />
+
+    <!-- Modal resistência paranormal-->
+    <div class="modal fade" id="ModalResistenciaParanormal" tabindex="-1" role="dialog"
+      aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content cardModal">
+          <div class="modal-body">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <h3 class="modal-title centralizarTitulos" id="exampleModalLabel">Resistências Paranormais</h3>
+            <div>
+              <div class="resistenciaParanormal">
+                <div class="resistenciaParanormalLinha1">
+                  <div>
+                    Morte:
+                    <input type="text" class="quantStatusResistenciaParanormal" />
+                  </div>
+                  <div>
+                    Sangue:
+                    <input type="text" class="quantStatusResistenciaParanormal" />
+                  </div>
+                </div>
+
+                <div class="resistenciaParanormalLinha2">
+                  <div>
+                    Energia:
+                    <input type="text" class="quantStatusResistenciaParanormal" />
+                  </div>
+                  <div>
+                    Conhecimento:
+                    <input type="text" class="quantStatusResistenciaParanormal" />
+                  </div>
+                </div>
+
+                <div class="resistenciaParanormalMedo">
+                  <div>
+                    Medo:
+                    <input type="text" class="quantStatusResistenciaParanormal" />
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -145,16 +242,21 @@
     </div>
 
   </div>
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+  <script
+    src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
     integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
     integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-    crossorigin="anonymous"></script>
-
+    crossorigin="anonymous"
+  ></script>
 
   <script src="./JavaScript/scriptStatusVida.js"></script>
   <script src="./JavaScript/scriptStatusSanidade.js"></script>
@@ -163,5 +265,4 @@
   <script src="./JavaScript/scriptHoversTitulos.js"></script>
 
 </body>
-
 </html>
