@@ -9,7 +9,7 @@
   flex-direction: column;
   border: 1.7px solid rgb(145, 0, 0);
   border-radius: 20px;
-  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.905);
 }
 
 .img-nomes {
@@ -32,7 +32,10 @@
   flex-direction: column;
 }
 
-.nomeJogador-Personagem, .quantStatusDefensivos {
+.nomeJogador-Personagem,
+.quantStatusDefensivos,
+.quantStatusResistenciaFisica,
+.quantStatusResistenciaParanormal {
   width: 100%;
   height: 50px;
   border: 0;
@@ -45,14 +48,17 @@
   font-family: Lacquer;
 }
 
-.quantStatusDefensivos {
-  width: 50px;
+.quantStatusDefensivos, .quantStatusResistenciaFisica, .quantStatusResistenciaParanormal {
+  width: 40px;
   height: 30px;
   font-size: 25px;
   color: white;
 }
 
-.nomeJogador-Personagem:focus, .quantStatusDefensivos:focus {
+.nomeJogador-Personagem:focus,
+.quantStatusDefensivos:focus,
+.quantStatusResistenciaFisica:focus,
+.quantStatusResistenciaParanormal:focus {
   animation: border-fade 1s infinite alternate;
 }
 
@@ -107,12 +113,13 @@
 .defensivos {
   display: flex;
   flex-direction: row;
-  height: 80px;
+  height: 65px;
   padding: 0;
 }
 
 .tituloStatus, .tituloDefensivos {
   color: black;
+  margin-bottom: 5px;
 }
 
 .status-vida,
@@ -158,7 +165,7 @@
 }
 
 #reflexo {
-  width: 45px;
+  width: 40px;
   height: 30px;
   margin-right: 5px;
 }
@@ -200,6 +207,38 @@
 .barLife.red, .barSanity.red, .barPeRodada.red, .barPeTotal.red {
   border-radius: 10px;
   background-color: #992a0e;
+}
+
+.btnResistenciaFisica, .btnResistenciaParanormal{
+  width: 100px;
+}
+
+.cardModal {
+  width: 400px;
+  background-color: rgba(0, 0, 0, 0.850);
+  border: 1px solid white;
+  /* color: black; */
+}
+
+.organizacaoColuna {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+}
+
+.centralizarTitulos {
+  text-align: center;
+}
+
+.resistenciaParanormal {
+  display: flex;
+  flex-direction: column; 
+}
+
+.resistenciaParanormalLinha1, .resistenciaParanormalLinha2, .resistenciaParanormalMedo {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
 }
 
 /* input {
