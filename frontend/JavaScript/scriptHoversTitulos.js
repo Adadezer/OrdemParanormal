@@ -71,3 +71,37 @@ bloqueio.addEventListener('mouseover', () => {
 bloqueio.addEventListener('mouseout', () => {
   tituloBloqueio.style.color = '';
 });
+
+// CÓDIGO HOVER DO TITULO RESISTENCIA FISICA
+const tituloResFisica = document.querySelector("#tituloResFisica");
+const resFisica = document.querySelector("#imgResistenciaFisica");
+resFisica.addEventListener('mouseover', () => {
+ tituloResFisica.style.color = 'purple';
+});
+
+resFisica.addEventListener('mouseout', () => {
+ tituloResFisica.style.color = '';
+});
+
+// CÓDIGO HOVER DO TITULO RESISTENCIA PARAMORNAL
+const tituloResParanormal = document.querySelector("#tituloResParanormal");
+const resParanormal = document.querySelector("#imgResistenciaParanormal");
+resParanormal.addEventListener('mouseover', () => {
+ tituloResParanormal.style.color = 'purple';
+});
+
+resParanormal.addEventListener('mouseout', () => {
+ tituloResParanormal.style.color = '';
+});
+
+
+const imagem = document.querySelector('.imagem');
+const descricao = document.querySelector('.descricao');
+
+imagem.addEventListener('mouseover', () => {
+  descricao.style.display = 'block';
+});
+
+imagem.addEventListener('mouseout', () => {
+  descricao.style.display = 'none';
+});

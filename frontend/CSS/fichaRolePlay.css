@@ -4,12 +4,38 @@
   width: 500px;
   height: 100%;
   margin: 5px;
-  padding: 15px;
+  padding: 0, 15px;
+  padding-bottom: 15px;
   display: flex;
   flex-direction: column;
   border: 1.7px solid rgb(145, 0, 0);
   border-radius: 20px;
   background-color: rgba(0, 0, 0, 0.905);
+}
+
+.btnResistencias {
+  display: flex;
+  justify-content: flex-end;
+  /* height: 80px; */
+  /* background-color: rgba(0, 255, 255, 0.486); */
+}
+
+.resistenciaFisica, .resistenciaParanormal {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: flex-end; */
+  /* background-color: #087008; */
+}
+.btnResistenciaFisica {
+  width: 50px;
+  height: 50px;
+  margin-left: 30px;
+}
+
+.btnResistenciaParanormal {
+  width: 60px;
+  height: 50px;
+  margin-left: 70px;
 }
 
 .img-nomes {
@@ -42,7 +68,7 @@
   border-bottom: rgb(145, 0, 0) solid 2px;
   outline: 0;
   background: transparent;
-  font-size: large;
+  font-size: 25px;
   text-align: center;
   color: purple;
   font-family: Lacquer;
@@ -118,8 +144,7 @@
 }
 
 .tituloStatus, .tituloDefensivos {
-  color: black;
-  margin-bottom: 5px;
+  color: rgb(0, 0, 0);
 }
 
 .status-vida,
@@ -209,15 +234,10 @@
   background-color: #992a0e;
 }
 
-.btnResistenciaFisica, .btnResistenciaParanormal{
-  width: 100px;
-}
-
 .cardModal {
   width: 400px;
   background-color: rgba(0, 0, 0, 0.850);
   border: 1px solid white;
-  /* color: black; */
 }
 
 .organizacaoColuna {
