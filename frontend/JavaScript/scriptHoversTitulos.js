@@ -95,15 +95,3 @@ resParanormal.addEventListener('mouseout', () => {
  tituloResParanormal.style.color = '';
  tituloResParanormal.style.display = 'none';
 });
-
-
-const imagem = document.querySelector('.imagem');
-const descricao = document.querySelector('.descricao');
-
-imagem.addEventListener('mouseover', () => {
-  descricao.style.display = 'block';
-});
-
-imagem.addEventListener('mouseout', () => {
-  descricao.style.display = 'none';
-});
