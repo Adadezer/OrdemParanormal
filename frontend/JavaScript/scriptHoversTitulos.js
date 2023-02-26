@@ -88,10 +88,12 @@ const tituloResParanormal = document.querySelector("#tituloResParanormal");
 const resParanormal = document.querySelector("#imgResistenciaParanormal");
 resParanormal.addEventListener('mouseover', () => {
  tituloResParanormal.style.color = 'purple';
+ tituloResParanormal.style.display = 'block';
 });
 
 resParanormal.addEventListener('mouseout', () => {
  tituloResParanormal.style.color = '';
+ tituloResParanormal.style.display = 'none';
 });
 
 
