@@ -1,0 +1,21 @@
+.containerCarousel {
+  height: 100vh;
+}
+
+#atributos {
+  width: 35%;
+}
+
+.centro {
+  width: 83%;
+  height: 90vh;
+  margin: 0 8.5%;
+  background-color: rgba(0, 0, 0, 0.835);
+  border: 1px solid rgb(145, 0, 0);
+  border-radius: 10px;
+  margin-top: 2%;
+}
+
+.zonaClick {
+  width: 8%;
+}
