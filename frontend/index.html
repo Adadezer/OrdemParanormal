@@ -4,260 +4,59 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ficha Role Play Betinho</title>
+  
+  <title>Edição</title>
 
-  <link
-    rel="stylesheet"
-    href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
-    crossorigin="anonymous"
-  >
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 
   <link rel="stylesheet" href="./CSS/style.css">
-  <link rel="stylesheet" href="./CSS/fichaRolePlay.css">
+  <link rel="stylesheet" href="./CSS/edicao.css">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lacquer&display=swap" rel="stylesheet">
 </head>
-
 <body>
-  <div class="container">
-    <div class="tituloResistencias">
-      <div id="tituloResParanormal" class="tituloStatus">Res.Paranormal</div>
-      <div id="tituloResFisica" class="tituloStatus">Res.Física</div>
-    </div>
-    <div class="btnResistencias">
-      <!-- Button trigger modal resistência paranormal-->
-      <img
-        src="./Images/ResistenciaParanormal.png"
-        id="imgResistenciaParanormal"
-        class="btn btnResistenciaParanormal"
-        data-toggle="modal"
-        data-target="#ModalResistenciaParanormal"
-      />
-      <!-- Modal resistência paranormal-->
-      <div class="modal fade" id="ModalResistenciaParanormal" tabindex="-1" role="dialog"
-        aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-          <div class="modal-content cardModal">
-            <div class="modal-body">
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-              <h3 class="modal-title centralizarTitulos" id="exampleModalLabel">Resistências Paranormais</h3>
-              <div>
-                <div class="resistenciaParanormal">
-                  <div class="resistenciaParanormalLinha1">
-                    <div>
-                      Morte:
-                      <input type="text" class="quantStatusResistenciaParanormal" />
-                    </div>
-                    <div>
-                      Sangue:
-                      <input type="text" class="quantStatusResistenciaParanormal" />
-                    </div>
-                  </div>
-
-                  <div class="resistenciaParanormalLinha2">
-                    <div>
-                      Energia:
-                      <input type="text" class="quantStatusResistenciaParanormal" />
-                    </div>
-                    <div>
-                      Conhecimento:
-                      <input type="text" class="quantStatusResistenciaParanormal" />
-                    </div>
-                  </div>
-
-                  <div class="resistenciaParanormalMedo">
-                    <div>
-                      Medo:
-                      <input type="text" class="quantStatusResistenciaParanormal" />
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Button trigger modal resistência física-->
-      <img
-        src="./Images/ResistenciaFisica.png"
-        id="imgResistenciaFisica"
-        class="btn btnResistenciaFisica"
-        data-toggle="modal"
-        data-target="#ModalResistenciaFisica"
-      />
-      <!-- Modal resistência física-->
-      <div class="modal fade" id="ModalResistenciaFisica" tabindex="-1" role="dialog"
-        aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-          <div class="modal-content cardModal">
-            <div class="modal-body">
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-              <h3 class="modal-title centralizarTitulos" id="exampleModalLabel">Resistências Físicas</h3>
-              <div class="organizacaoColuna">
-                <div class="resistenciaFisicaEsquerdo">
-                  <div>
-                    Balistica:
-                    <input type="text" class="quantStatusResistenciaFisica" />
-                  </div>
-                  <div>
-                    Corte:
-                    <input type="text" class="quantStatusResistenciaFisica" />
-                  </div>
-                  <div>
-                    Eletricidade:
-                    <input type="text" class="quantStatusResistenciaFisica" />
-                  </div>
-                  <div>
-                    Impacto:
-                    <input type="text" class="quantStatusResistenciaFisica" />
-                  </div>
-                  <div>
-                    Fogo:
-                    <input type="text" class="quantStatusResistenciaFisica" />
-                  </div>
-                </div>
-
-                <div class="resistenciaFisicaDireito">
-                  <div>
-                    Frio:
-                    <input type="text" class="quantStatusResistenciaFisica" />
-                  </div>
-                  <div>
-                    Perfuração:
-                    <input type="text" class="quantStatusResistenciaFisica" />
-                  </div>
-                  <div>
-                    Paranormal:
-                    <input type="text" class="quantStatusResistenciaFisica" />
-                  </div>
-                  <div>
-                    Mental:
-                    <input type="text" class="quantStatusResistenciaFisica" />
-                  </div>
-                  <div>
-                    Química:
-                    <input type="text" class="quantStatusResistenciaFisica" />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="img-nomes">
-      <img src="./Images/avatarDante.jpg" class="avatar" />
-      <div class="containerJogador-Personagem">
-        <div class="Jogador-Personagem">
-          <input type="text" class="nomeJogador-Personagem" />
-          <h4>Personagem</h4>
-        </div>
-        <div class="Jogador-Personagem">
-          <input type="text" class="nomeJogador-Personagem" />
-          <h4>Jogador</h4>
-        </div>
-      </div>
-    </div>
-
-    <div class="orgm-class">
-      <div class="containerOrigem-Classe">
-        <div class="Origem-Classe">
-          <div class="nomeOrigem-Classe"></div>
-          <h4>Origem</h4>
-        </div>
-      </div>
-      <div class="containerOrigem-Classe">
-        <div class="Origem-Classe">
-          <div class="nomeOrigem-Classe"></div>
-          <h4>Classe</h4>
-        </div>
-      </div>
-    </div>
-
-    <div class="status">
-      <div id="tituloVida" class="tituloStatus">Vida</div>
-      <div class="status-vida">
-        <img id="heart" src="./Images/Life.png" />
-        <img src="./Images/setaMenos1.png" id="heartMinusOne" class="buttonStatusLife" />
-        <img src="./Images/setaMenos5.png" id="heartMinusFive" class="buttonStatusLife" />
-        <div class="progressLife">
-          <div class="barLife" id="barraVida"></div>
-        </div>
-        <img src="./Images/setaMais1.png" id="heartPlusOne" class="buttonStatusLife" />
-        <img src="./Images/setaMais5.png" id="heartPlusFive" class="buttonStatusLife" />
-      </div>
-
-      <div id="tituloSanidade" class="tituloStatus">Sanidade</div>
-      <div class="status-sanidade">
-        <img id="sanity" src="./Images/cerebro.png" />
-        <img src="./Images/setaMenos1.png" id="sanityMinusOne" class="buttonStatusSanity" />
-        <img src="./Images/setaMenos5.png" id="sanityMinusFive" class="buttonStatusSanity" />
-        <div class="progressSanity">
-          <div class="barSanity" id="barraSanidade"></div>
-        </div>
-        <img src="./Images/setaMais1.png" id="sanityPlusOne" class="buttonStatusSanity" />
-        <img src="./Images/setaMais5.png" id="sanityPlusFive" class="buttonStatusSanity" />
-      </div>
-
-      <div id="tituloPeRodada" class="tituloStatus">PE/Rodada</div>
-      <div class="status-peRodada">
-        <img id="peRodada" src="./Images/musculo1.png" />
-        <img src="./Images/setaMenos1.png" id="peRodadaMinusOne" class="buttonStatusPeRodada" />
-        <img src="./Images/setaMenos5.png" id="peRodadaMinusFive" class="buttonStatusPeRodada" />
-        <div class="progressPeRodada">
-          <div class="barPeRodada" id="barraPeRodada"></div>
-        </div>
-        <img src="./Images/setaMais1.png" id="peRodadaPlusOne" class="buttonStatusPeRodada" />
-        <img src="./Images/setaMais5.png" id="peRodadaPlusFive" class="buttonStatusPeRodada" />
-      </div>
-
-      <div id="tituloPeTotal" class="tituloStatus">PE/Total</div>
-      <div class="status-peTotal">
-        <img id="peTotal" src="./Images/corpo1.png" />
-        <img src="./Images/setaMenos1.png" id="peTotalMinusOne" class="buttonStatusPeTotal" />
-        <img src="./Images/setaMenos5.png" id="peTotalMinusFive" class="buttonStatusPeTotal" />
-        <div class="progressPeTotal">
-          <div class="barPeTotal" id="barraPeTotal"></div>
-        </div>
-        <img src="./Images/setaMais1.png" id="peTotalPlusOne" class="buttonStatusPeTotal" />
-        <img src="./Images/setaMais5.png" id="peTotalPlusFive" class="buttonStatusPeTotal" />
-      </div>
-    </div>
-
-    <div class="defensivos">
-      <div class="status-defensivos">
-        <div id="tituloDefesa" class="tituloDefensivos">Defesa</div>
+  <div id="carouselExampleCaptions" class="carousel slide containerCarousel">
+    <div class="carousel-indicators">
+      <div class="alinharTitulos">
         <div>
-          <img id="defesa" src="./Images/escudo.png" />
-          <input type="text" class="quantStatusDefensivos" />
-        </div>
-      </div>
-
-      <div class="status-defensivos">
-        <div id="tituloReflexo" class="tituloDefensivos">Reflexo</div>
-        <div>
-          <img id="reflexo" src="./Images/reflexo1.png" />
-          <input type="text" class="quantStatusDefensivos" />
-        </div>
-      </div>
-
-      <div class="status-defensivos">
-        <div id="tituloBloqueio" class="tituloDefensivos">Bloqueio</div>
-        <div>
-          <img id="bloqueio" src="./Images/bloqueio.png" />
-          <input type="text" class="quantStatusDefensivos" />
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
         </div>
       </div>
     </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active centro">
+        <img id="atributos" src="./Images/atributos.png">
+        <div class="carousel-caption d-none d-md-block">
+          <h5 class="titulosCarousel">ATRIBUTOS, CLASSES, ORIGEM</h5>
+        </div>
+      </div>
+      <div class="carousel-item centro">
+        <h1>Segunda página do carrousel (Embarque nesse carousel)</h1>
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Segundo Título</h5>
+          <p>Some representative placeholder content for the second slide.</p>
+        </div>
+      </div>
+      <div class="carousel-item centro">
+        <h1>Terceira página do carrousel (Embarque nesse carousel)</h1>
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Third slide label</h5>
+          <p>Some representative placeholder content for the third slide.</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev zonaClick" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next zonaClick" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
   </div>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -265,15 +64,6 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
     integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
     crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-    crossorigin="anonymous"></script>
-
-  <script src="./JavaScript/scriptStatusVida.js"></script>
-  <script src="./JavaScript/scriptStatusSanidade.js"></script>
-  <script src="./JavaScript/scriptStatusPeRodada.js"></script>
-  <script src="./JavaScript/scriptStatusPeTotal.js"></script>
-  <script src="./JavaScript/scriptHoversTitulos.js"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </body>
 </html>
