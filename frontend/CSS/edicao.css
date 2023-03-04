@@ -3,7 +3,7 @@
 }
 
 #atributos {
-  width: 35%;
+  width: 80%;
   margin-top: 6%;
   margin-left: 35px;
 }
@@ -16,8 +16,26 @@
   border: 1px solid rgb(145, 0, 0);
   border-radius: 10px;
   margin-top: 2%;
-}
+} 
 
 .zonaClick {
   width: 8%;
+}
+
+.dropSelects {
+  background-color: rgba(0, 0, 0, 0.719);
+  border: 1px solid rgba(145, 0, 0, 0.678);
+  color: white;
+}
+
+.dropSelects:hover {
+  background-color: rgba(20, 20, 20, 0.897);
+  border: 1px solid rgba(145, 0, 0, 0.678);
+  color: white;
+}
+
+.dropSelectsMenu {
+  background-color: rgba(0, 0, 0, 0.719);
+  box-shadow: 13px 0px 53px 0px rgba(255,0,0,1);
+  color: white;
 }
