@@ -29,7 +29,36 @@
     </div>
     <div class="carousel-inner">
       <div class="carousel-item active centro">
-        <img id="atributos" src="./Images/atributos.png">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <img id="atributos" src="./Images/atributos.png">
+            </div>
+            <div class="col-md-6">
+              <nav class="navbar navbar-expand-lg navbar-dark">
+                <div class="container-fluid">
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+                    <ul class="navbar-nav">
+                      <li class="nav-item dropdown">
+                        <button id="dropOrigens" class="btn dropdown-toggle dropSelects" data-bs-toggle="dropdown" aria-expanded="false" value="Origens">
+                          Origens
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-dark dropSelectsMenu">
+                          <li><a class="dropdown-item" href="#">Combatente</a></li>
+                          <li><a class="dropdown-item" href="#">Especialista</a></li>
+                          <li><a class="dropdown-item" href="#">Ocultista</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+            </div>
+          </div>
+        </div>
         <div class="carousel-caption d-none d-md-block">
           <h5 class="titulosCarousel">ATRIBUTOS, CLASSES, ORIGEM</h5>
         </div>
@@ -64,6 +93,8 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
     integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
     crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-</body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+  <script src="./JavaScript/edicao/scriptEdicao.js"></script>
+  </body>
 </html>
