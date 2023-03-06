@@ -1,4 +1,4 @@
-.container {
+.containerFicha {
   max-width: 500px;
   max-height: 100%;
   margin: 5px;
@@ -14,7 +14,7 @@
 .tituloResistencias {
   display: flex;
   justify-content: flex-end;
-  margin-bottom: 15px;
+  margin-bottom: 1rem;
 }
 
 #tituloResParanormal, #tituloResFisica {
@@ -22,35 +22,36 @@
   z-index: 1;
 }
 #tituloResParanormal {
-  margin-right: 30px;
+  margin-right: 1rem;
   z-index: 2;
 }
 
 .btnResistencias {
   display: flex;
   justify-content: flex-end;
-  margin-right: 10px;
-  margin-bottom: 20px;
+  margin-bottom: 1rem;
 }
 
 .btnResistenciaFisica {
-  width: 50px;
-  height: 50px;
+  max-width: 50px;
+  max-height: 50px;
 }
 
 .btnResistenciaParanormal {
-  width: 60px;
-  height: 50px;
+  max-width: 60px;
+  max-height: 50px;
 }
 
 .img-nomes {
   display: flex;
+  justify-content: space-around;
 }
 
 .avatar {
   border-radius: 100%;
-  max-width: 150px;
+  width: 35%;
   height: 200px;
+  margin-right: 10%;
 }
 .avatar:hover, .btnResistenciaParanormal:hover, .btnResistenciaFisica:hover {
   transform: scale(1.1);
@@ -59,7 +60,6 @@
 }
 
 .containerJogador-Personagem {
-  margin-left: 25px;
   display: flex;
   flex-direction: column;
 }
@@ -111,7 +111,7 @@
 .orgm-class {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .Origem-Classe {
@@ -121,22 +121,40 @@
 }
 
 .nomeOrigem-Classe {
-  width: 200px;
-  height: 50px;
+  display: flex;
+  max-width: 200px;
+  max-height: 50px;
   margin-top: 25px;
   padding: 15px;
   border-radius: 10px;
-  background-color: rgba(145, 0, 0, 0.363);
+  /* background-color: rgba(145, 0, 0, 0.363); */
+  background-color: rgba(0, 0, 0, 0.363);
+  border: 1.5px solid rgba(145, 0, 0, 0.699);
   font-size: 20px;
   text-align: center;
+}
+
+#inputOrigem, #inputClasse {
+  width: 100%;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  font-size: 22px;
+  text-align: center;
+  color: purple;
+  z-index: 2;
+}
+
+#containerOrigem-Classe-Origem {
+  margin-right: 25px;
 }
 
 .status, .defensivos {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  width: 467px;
-  height: 235px;
+  max-width: 467px;
+  max-height: 235px;
   margin-top: 15px;  
   border-radius: 10px;
   border: 2px solid rgba(145, 0, 0, 0.63);
