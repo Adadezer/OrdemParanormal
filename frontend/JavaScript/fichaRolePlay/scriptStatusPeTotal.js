@@ -45,38 +45,56 @@ setProgressPeTotal(100);
 
 const peTotalMinusOne = document.getElementById("peTotalMinusOne");
 peTotalMinusOne.addEventListener("click", () => {
-  if (porcentagemBarraPeTotal > 0) {
+  if (Math.round(porcentagemBarraPeTotal) > 0) {
     porcentagemBarraPeTotal -= (100 / maxPeTotal); // 5%
     setProgressPeTotal(porcentagemBarraPeTotal);
-    barraPeTotal.innerHTML = `${Math.trunc((porcentagemBarraPeTotal / 100) * maxPeTotal)}/${maxPeTotal}`;
+    barraPeTotal.innerHTML = `${Math.round((porcentagemBarraPeTotal / 100) * maxPeTotal)}/${maxPeTotal}`;
   }
 });
 
 const peTotalMinusFive = document.getElementById("peTotalMinusFive");
 peTotalMinusFive.addEventListener("click", () => {
   // se % for maior ou igual os 25% q ele vai tirar
-  if (porcentagemBarraPeTotal >= ( ( 100 / (maxPeTotal / 5) ) )) {
+  if (Math.round(porcentagemBarraPeTotal) >= ( ( 100 / (maxPeTotal / 5) ) )) {
     porcentagemBarraPeTotal -= (100 / (maxPeTotal / 5)); // 25%
     setProgressPeTotal(porcentagemBarraPeTotal);
-    barraPeTotal.innerHTML = `${Math.trunc((porcentagemBarraPeTotal / 100) * maxPeTotal)}/${maxPeTotal}`;
+    barraPeTotal.innerHTML = `${Math.round((porcentagemBarraPeTotal / 100) * maxPeTotal)}/${maxPeTotal}`;
+  }
+});
+
+const peTotalMinusTen = document.getElementById("peTotalMinusTen");
+peTotalMinusTen.addEventListener("click", () => {
+  if (Math.round(porcentagemBarraPeTotal) >= ( ( 100 / (maxPeTotal / 10) ) )) {
+    porcentagemBarraPeTotal -= (100 / (maxPeTotal / 10));
+    setProgressPeTotal(porcentagemBarraPeTotal);
+    barraPeTotal.innerHTML = `${Math.round((porcentagemBarraPeTotal / 100) * maxPeTotal)}/${maxPeTotal}`;
   }
 });
 
 const peTotalPlusOne = document.getElementById("peTotalPlusOne");
 peTotalPlusOne.addEventListener("click", () => {
-  if (porcentagemBarraPeTotal < 100) {
+  if (Math.round(porcentagemBarraPeTotal) < 100) {
     porcentagemBarraPeTotal += (100 / maxPeTotal); // 5%
     setProgressPeTotal(porcentagemBarraPeTotal);
-    barraPeTotal.innerHTML = `${Math.trunc((porcentagemBarraPeTotal / 100) * maxPeTotal)}/${maxPeTotal}`;
+    barraPeTotal.innerHTML = `${Math.round((porcentagemBarraPeTotal / 100) * maxPeTotal)}/${maxPeTotal}`;
   }
 });
 
 const peTotalPlusFive = document.getElementById("peTotalPlusFive");
 peTotalPlusFive.addEventListener("click", () => {
   // se % for menor ou igual q 100 menos os 25% q ele vai tirar, com maxPeTotal 20, if % < 80 (100 - 20)
-  if (porcentagemBarraPeTotal <= 100 - ( 100 / (maxPeTotal / 5) )) {
+  if (Math.round(porcentagemBarraPeTotal) <= 100 - ( 100 / (maxPeTotal / 5) )) {
     porcentagemBarraPeTotal += (100 / (maxPeTotal / 5)); // 25%
     setProgressPeTotal(porcentagemBarraPeTotal);
-    barraPeTotal.innerHTML = `${Math.trunc((porcentagemBarraPeTotal / 100) * maxPeTotal)}/${maxPeTotal}`;
+    barraPeTotal.innerHTML = `${Math.round((porcentagemBarraPeTotal / 100) * maxPeTotal)}/${maxPeTotal}`;
+  }
+});
+
+const peTotalPlusTen = document.getElementById("peTotalPlusTen");
+peTotalPlusTen.addEventListener("click", () => {
+  if (Math.round(porcentagemBarraPeTotal) <= 100 - ( 100 / (maxPeTotal / 10) )) {
+    porcentagemBarraPeTotal += (100 / (maxPeTotal / 10)); 
+    setProgressPeTotal(porcentagemBarraPeTotal);
+    barraPeTotal.innerHTML = `${Math.round((porcentagemBarraPeTotal / 100) * maxPeTotal)}/${maxPeTotal}`;
   }
 });

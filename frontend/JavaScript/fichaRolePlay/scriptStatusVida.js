@@ -45,38 +45,56 @@ setProgressLife(100);
 
 const heartMinusOne = document.getElementById("heartMinusOne");
 heartMinusOne.addEventListener("click", () => {
-  if (porcentagemBarraVida > 0) {
+  if (Math.round(porcentagemBarraVida) > 0) {
     porcentagemBarraVida -= (100 / maxLife); // 5%
     setProgressLife(porcentagemBarraVida);
-    barraVida.innerHTML = `${Math.trunc((porcentagemBarraVida / 100) * maxLife)}/${maxLife}`;
+    barraVida.innerHTML = `${Math.round((porcentagemBarraVida / 100) * maxLife)}/${maxLife}`;
   }
 });
 
 const heartMinusFive = document.getElementById("heartMinusFive");
 heartMinusFive.addEventListener("click", () => {
   // se % for maior ou igual os 25% q ele vai tirar
-  if (porcentagemBarraVida >= ( ( 100 / (maxLife / 5) ) )) {
+  if (Math.round(porcentagemBarraVida) >= ( ( 100 / (maxLife / 5) ) )) {
     porcentagemBarraVida -= (100 / (maxLife / 5)); // 25%
     setProgressLife(porcentagemBarraVida);
-    barraVida.innerHTML = `${Math.trunc((porcentagemBarraVida / 100) * maxLife)}/${maxLife}`;
+    barraVida.innerHTML = `${Math.round((porcentagemBarraVida / 100) * maxLife)}/${maxLife}`;
+  }
+});
+
+const heartMinusTen = document.getElementById("heartMinusTen");
+heartMinusTen.addEventListener("click", () => {
+  if (Math.round(porcentagemBarraVida) >= ( ( 100 / (maxLife / 10) ) )) {
+    porcentagemBarraVida -= (100 / (maxLife / 10));
+    setProgressLife(porcentagemBarraVida);
+    barraVida.innerHTML = `${Math.round((porcentagemBarraVida / 100) * maxLife)}/${maxLife}`;
   }
 });
 
 const heartPlusOne = document.getElementById("heartPlusOne");
 heartPlusOne.addEventListener("click", () => {
-  if (porcentagemBarraVida < 100) {
+  if (Math.round(porcentagemBarraVida) < 100) {
     porcentagemBarraVida += (100 / maxLife); // 5%
     setProgressLife(porcentagemBarraVida);
-    barraVida.innerHTML = `${Math.trunc((porcentagemBarraVida / 100) * maxLife)}/${maxLife}`;
+    barraVida.innerHTML = `${Math.round((porcentagemBarraVida / 100) * maxLife)}/${maxLife}`;
   }
 });
 
 const heartPlusFive = document.getElementById("heartPlusFive");
 heartPlusFive.addEventListener("click", () => {
   // se % for menor ou igual q 100 menos os 25% q ele vai tirar, com maxLife 20, if % < 80 (100 - 20)
-  if (porcentagemBarraVida <= 100 - ( 100 / (maxLife / 5) )) {
+  if (Math.round(porcentagemBarraVida) <= 100 - ( 100 / (maxLife / 5) )) {
     porcentagemBarraVida += (100 / (maxLife / 5)); // 25%
     setProgressLife(porcentagemBarraVida);
-    barraVida.innerHTML = `${Math.trunc((porcentagemBarraVida / 100) * maxLife)}/${maxLife}`;
+    barraVida.innerHTML = `${Math.round((porcentagemBarraVida / 100) * maxLife)}/${maxLife}`;
+  }
+});
+
+const heartPlusTen = document.getElementById("heartPlusTen");
+heartPlusTen.addEventListener("click", () => {
+  if (Math.round(porcentagemBarraVida) <= 100 - ( ( 100 / (maxLife / 10) ) )) {
+    porcentagemBarraVida += (100 / (maxLife / 10));
+    setProgressLife(porcentagemBarraVida);
+    barraVida.innerHTML = `${Math.round((porcentagemBarraVida / 100) * maxLife)}/${maxLife}`;
   }
 });

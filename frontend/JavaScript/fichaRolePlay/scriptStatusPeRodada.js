@@ -45,38 +45,56 @@ setProgressPeRodada(100);
 
 const peRodadaMinusOne = document.getElementById("peRodadaMinusOne");
 peRodadaMinusOne.addEventListener("click", () => {
-  if (porcentagemBarraPeRodada > 0) {
+  if (Math.round(porcentagemBarraPeRodada) > 0) {
     porcentagemBarraPeRodada -= (100 / maxPeRodada); // 5%
     setProgressPeRodada(porcentagemBarraPeRodada);
-    barraPeRodada.innerHTML = `${Math.trunc((porcentagemBarraPeRodada / 100) * maxPeRodada)}/${maxPeRodada}`;
+    barraPeRodada.innerHTML = `${Math.round((porcentagemBarraPeRodada / 100) * maxPeRodada)}/${maxPeRodada}`;
   }
 });
 
 const peRodadaMinusFive = document.getElementById("peRodadaMinusFive");
 peRodadaMinusFive.addEventListener("click", () => {
   // se % for maior ou igual os 25% q ele vai tirar
-  if (porcentagemBarraPeRodada >= ( ( 100 / (maxPeRodada / 5) ) )) {
+  if (Math.round(porcentagemBarraPeRodada) >= ( ( 100 / (maxPeRodada / 5) ) )) {
     porcentagemBarraPeRodada -= (100 / (maxPeRodada / 5)); // 25%
     setProgressPeRodada(porcentagemBarraPeRodada);
-    barraPeRodada.innerHTML = `${Math.trunc((porcentagemBarraPeRodada / 100) * maxPeRodada)}/${maxPeRodada}`;
+    barraPeRodada.innerHTML = `${Math.round((porcentagemBarraPeRodada / 100) * maxPeRodada)}/${maxPeRodada}`;
+  }
+});
+
+const peRodadaMinusTen = document.getElementById("peRodadaMinusTen");
+peRodadaMinusTen.addEventListener("click", () => {
+  if (Math.round(porcentagemBarraPeRodada) >= ( ( 100 / (maxPeRodada / 10) ) )) {
+    porcentagemBarraPeRodada -= (100 / (maxPeRodada / 10));
+    setProgressPeRodada(porcentagemBarraPeRodada);
+    barraPeRodada.innerHTML = `${Math.round((porcentagemBarraPeRodada / 100) * maxPeRodada)}/${maxPeRodada}`;
   }
 });
 
 const peRodadaPlusOne = document.getElementById("peRodadaPlusOne");
 peRodadaPlusOne.addEventListener("click", () => {
-  if (porcentagemBarraPeRodada < 100) {
+  if (Math.round(porcentagemBarraPeRodada) < 100) {
     porcentagemBarraPeRodada += (100 / maxPeRodada); // 5%
     setProgressPeRodada(porcentagemBarraPeRodada);
-    barraPeRodada.innerHTML = `${Math.trunc((porcentagemBarraPeRodada / 100) * maxPeRodada)}/${maxPeRodada}`;
+    barraPeRodada.innerHTML = `${Math.round((porcentagemBarraPeRodada / 100) * maxPeRodada)}/${maxPeRodada}`;
   }
 });
 
 const peRodadaPlusFive = document.getElementById("peRodadaPlusFive");
 peRodadaPlusFive.addEventListener("click", () => {
   // se % for menor ou igual q 100 menos os 25% q ele vai tirar, com maxPeRodada 20, if % < 80 (100 - 20)
-  if (porcentagemBarraPeRodada <= 100 - ( 100 / (maxPeRodada / 5) )) {
+  if (Math.round(porcentagemBarraPeRodada) <= 100 - ( 100 / (maxPeRodada / 5) )) {
     porcentagemBarraPeRodada += (100 / (maxPeRodada / 5)); // 25%
     setProgressPeRodada(porcentagemBarraPeRodada);
-    barraPeRodada.innerHTML = `${Math.trunc((porcentagemBarraPeRodada / 100) * maxPeRodada)}/${maxPeRodada}`;
+    barraPeRodada.innerHTML = `${Math.round((porcentagemBarraPeRodada / 100) * maxPeRodada)}/${maxPeRodada}`;
+  }
+});
+
+const peRodadaPlusTen = document.getElementById("peRodadaPlusTen");
+peRodadaPlusTen.addEventListener("click", () => {
+  if (Math.round(porcentagemBarraPeRodada) <= 100 - ( 100 / (maxPeRodada / 10) )) {
+    porcentagemBarraPeRodada += (100 / (maxPeRodada / 10));
+    setProgressPeRodada(porcentagemBarraPeRodada);
+    barraPeRodada.innerHTML = `${Math.round((porcentagemBarraPeRodada / 100) * maxPeRodada)}/${maxPeRodada}`;
   }
 });
