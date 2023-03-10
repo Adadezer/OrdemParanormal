@@ -45,38 +45,57 @@ setProgressSanity(100);
 
 const sanityMinusOne = document.getElementById("sanityMinusOne");
 sanityMinusOne.addEventListener("click", () => {
-  if (porcentagemBarraSanidade > 0) {
+  if (Math.round(porcentagemBarraSanidade) > 0) {
     porcentagemBarraSanidade -= (100 / maxSanity); // 5%
     setProgressSanity(porcentagemBarraSanidade);
-    barraSanidade.innerHTML = `${Math.trunc((porcentagemBarraSanidade / 100) * maxSanity)}/${maxSanity}`;
+    barraSanidade.innerHTML = `${Math.round((porcentagemBarraSanidade / 100) * maxSanity)}/${maxSanity}`;
   }
 });
 
 const sanityMinusFive = document.getElementById("sanityMinusFive");
 sanityMinusFive.addEventListener("click", () => {
   // se % for maior ou igual os 25% q ele vai tirar
-  if (porcentagemBarraSanidade >= ( ( 100 / (maxSanity / 5) ) )) {
+  if (Math.round(porcentagemBarraSanidade) >= ( ( 100 / (maxSanity / 5) ) )) {
     porcentagemBarraSanidade -= (100 / (maxSanity / 5)); // 25%
     setProgressSanity(porcentagemBarraSanidade);
-    barraSanidade.innerHTML = `${Math.trunc((porcentagemBarraSanidade / 100) * maxSanity)}/${maxSanity}`;
+    barraSanidade.innerHTML = `${Math.round((porcentagemBarraSanidade / 100) * maxSanity)}/${maxSanity}`;
+  }
+});
+
+const sanityMinusTen = document.getElementById("sanityMinusTen");
+sanityMinusTen.addEventListener("click", () => {
+  // se % for maior ou igual os 25% q ele vai tirar
+  if (Math.round(porcentagemBarraSanidade) >= ( ( 100 / (maxSanity / 10) ) )) {
+    porcentagemBarraSanidade -= (100 / (maxSanity / 10));
+    setProgressSanity(porcentagemBarraSanidade);
+    barraSanidade.innerHTML = `${Math.round((porcentagemBarraSanidade / 100) * maxSanity)}/${maxSanity}`;
   }
 });
 
 const sanityPlusOne = document.getElementById("sanityPlusOne");
 sanityPlusOne.addEventListener("click", () => {
-  if (porcentagemBarraSanidade < 100) {
+  if (Math.round(porcentagemBarraSanidade) < 100) {
     porcentagemBarraSanidade += (100 / maxSanity); // 5%
     setProgressSanity(porcentagemBarraSanidade);
-    barraSanidade.innerHTML = `${Math.trunc((porcentagemBarraSanidade / 100) * maxSanity)}/${maxSanity}`;
+    barraSanidade.innerHTML = `${Math.round((porcentagemBarraSanidade / 100) * maxSanity)}/${maxSanity}`;
   }
 });
 
 const sanityPlusFive = document.getElementById("sanityPlusFive");
 sanityPlusFive.addEventListener("click", () => {
   // se % for menor ou igual q 100 menos os 25% q ele vai tirar, com maxSanity 20, if % < 80 (100 - 20)
-  if (porcentagemBarraSanidade <= 100 - ( 100 / (maxSanity / 5) )) {
+  if (Math.round(porcentagemBarraSanidade) <= 100 - ( 100 / (maxSanity / 5) )) {
     porcentagemBarraSanidade += (100 / (maxSanity / 5)); // 25%
     setProgressSanity(porcentagemBarraSanidade);
-    barraSanidade.innerHTML = `${Math.trunc((porcentagemBarraSanidade / 100) * maxSanity)}/${maxSanity}`;
+    barraSanidade.innerHTML = `${Math.round((porcentagemBarraSanidade / 100) * maxSanity)}/${maxSanity}`;
+  }
+});
+
+const sanityPlusTen = document.getElementById("sanityPlusTen");
+sanityPlusTen.addEventListener("click", () => {
+  if (Math.round(porcentagemBarraSanidade) <= 100 - ( ( 100 / (maxSanity / 10) ) )) {
+    porcentagemBarraSanidade += (100 / (maxSanity / 10));
+    setProgressSanity(porcentagemBarraSanidade);
+    barraSanidade.innerHTML = `${Math.round((porcentagemBarraSanidade / 100) * maxSanity)}/${maxSanity}`;
   }
 });
